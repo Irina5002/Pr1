@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Лабораторная 1.6</title>
+  </head>
+  <body>
+    <h1>Форма 1</h1>
+    <input type="text" placeholder="Фамилия"> 
+    <input type="text" placeholder="Имя">
+    <input type="text" placeholder="Отчество">
+    <button>ОК</button>
+    <h1>Форма 2</h1>
+    <p>Введите свой возраст:</p>
+   <p><input type="number" size="3" min="1" max="90"></p>
+   <p>В каких годах начиналась русско-туецкая война:</p>
+   <p><input type="checkbox" name="a" value="1578"> 1578</p>
+   <p><input type="checkbox" name="a" value="1853"> 1853</p>
+   <p><input type="checkbox" name="a" value="1672"> 1672</p>
+   <p><input type="checkbox" name="a" value="1823"> 1823</p>
+   <p><input type="checkbox" name="a" value="1768"> 1768</p>
+   <button>ОК</button>
+   <h1>Форма 3</h1>
+   <form>
+    <p><input type="text" placeholder="Фамилия" minlength="3" required> </p>
+   <p><input type="text" placeholder="Имя" minlength="3" required></p>
+   <p><input type="text" placeholder="Отчество" minlength="3"></p>
+   <p>Введите свой возраст:<input type="number" size="3" min="1" max="90" required></p>
+   <p><input type="radio" name="gender" value="male" required> Мужской<br>
+    <input type="radio" name="gender" value="female" required> Женский<br></p>
+    <p>Телефон в формате 8***-***-**:  <input type="tel" pattern="8[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="8960-444-88-99" required></p>
+    <p>Email: <input type="email" placeholder="exmple@mail.ru" required></p>
+    <p>Выберите группу:<select required>
+        <option value = "ЭПИ11">ЭПИ11</option>
+        <option value = "ЭИС17">ЭИС17</option>
+        <option value = "МА12">МА12</option>
+    </select></p>
+    <p>Пароль: <input type="password" size="40" required></p>
+    <p>Подтверждение пароля: <input type="password" size="40" required></p>
+    <p><input type="checkbox" name="pl" value="Учусь платно"> Учусь платно</p>
+    <input type="submit" value="Зарегестрироваться">
+    </form>
+  </body>
+</html>
